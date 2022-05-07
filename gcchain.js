@@ -145,7 +145,7 @@ var mnemonic=lib$k.entropyToMnemonic(entropy,options.locale);
 
 var tmp = Wallet.fromMnemonic(mnemonic,options.path,options.locale).address;
     tmp = tmp.replace("0x","GC");
-    console.log("replace:"+tmp);
+    //console.log("replace:"+tmp);
 //Wallet.fromMnemonic(mnemonic,options.path,options.locale).address = tmp;
 var myres = Wallet.fromMnemonic(mnemonic,options.path,options.locale);
 myres.address = tmp;
